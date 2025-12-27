@@ -1,0 +1,391 @@
+:root {
+  --color-rosa: #e13b96;
+  --color-negro: #000000;
+  --color-blanco: #ffffff;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body{
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: linear-gradient(-208deg ,rgba(255, 255, 255, 0.496), rgba(180, 90, 119, 0.502)50%, rgba(106, 61, 75, 0.534)0%, rgba(0, 0, 0, 0.496));
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*> MEDIA QUERY <*//*
+@media (max-width: 678px){
+  body{
+    grid-template-rows: 50px 50px 50px 1fr 50px 50px 50px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "inicio"
+      "seccion-inicio"
+      "footer-text"
+      "main-section";
+  }
+}*/
+
+/*> INICIO BODY >*/
+
+/* INICIO DEL BODY PARA ESTABLECER AL FOOTER DEBAJO DE PÁGINA */
+section{
+  grid-row: 1;
+}
+footer{
+  grid-row: 2;
+}
+/* FIN DEL BODY PARA ESTABLECER AL FOOTER DEBAJO DE PÁGINA */
+
+/* SECCIÓN BARRA DE NAVEGACIÓN */
+
+
+.div-inicio{
+  column-gap: 1%;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  position: sticky;
+  top: 0px;
+}
+
+/*> INICIO SECCIÓN LOGO <*/
+#home{
+  text-align: center;
+  text-shadow: 1px 1px 2px var(--color-blanco), 1.5px 1.5px 2px var(--color-blanco), 0 0 15px var(--color-blanco);
+  flex: 1;
+}
+#l{
+  width: 75px;
+  height: auto;
+  display: block;
+  margin: auto;
+  box-shadow: 1px 1px 2px var(--color-blanco), 3px 2px 2px var(--color-rosa);
+  border-radius: 50%;
+}
+/*> FIN SECCIÓN LOGO <*/
+
+/* SECCIÓN INGRESOS */
+.navbar{
+  position: sticky;
+  display: flex;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.container-fluid{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+#ingreso, #contact-Event{
+  width: 250px;
+  height: auto;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.1em;
+  text-align: center;
+  box-shadow: inset .5px .5px 0px var(--color-negro), 1px 1px 1px var(--color-blanco);
+  display: block;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+  padding: 2px;
+  border-radius: 10px;
+  transition: all 1.5s ease-out;
+}
+#ingreso:hover, #contact-Event:hover {
+  color: #fff;
+  transition-delay: .7s;
+  animation: efect 2s forwards;
+  background: radial-gradient(circle, var(--color-rosa) 0.2em, transparent 0.3em) 6em 6em / 1em 1em,
+              radial-gradient(circle, var(--color-negro) 0.2em, transparent 0.3em) 0 0 / 1em 1em;
+}
+a{
+  width: 80%;
+}
+@keyframes efect {
+  100% {
+    background-size: 2.375em 2.375em, 0.1em 0.1em;
+  }
+}
+#ingreso:hover {
+  background-color: rgb(62, 91, 154);
+  color: white;
+  border-color: white;
+}
+/* FIN SECCIÓN INGRESOS */
+
+/*> INICIO SECCIÓN INFORMACIÓN BREVE <*/
+.seccion-inicio{
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-rosa); /*> ELIMINAR AL TERMINAR <*/
+}
+
+.inicio{
+  width: 100%;
+  height: auto;
+}
+.div-info-izquierda{
+  width: 100%;
+  height: auto;
+  padding: 1%;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  img{
+    width: 30%;
+    height: auto;
+    padding: 2%;
+  }
+  #div-info-a{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    border: solid 1.2px var(--color-blanco);
+  }
+  #title-div-info{
+    font-size: 2rem;
+    color: var(--color-negro);
+    text-shadow: 1px 1px 1px var(--color-blanco);
+  }
+}
+.info{
+  display: flex; /* activa Flexbox para alinear y distribuir elementos */
+  gap: 20px; /* se define el espacio entre elementos */
+  max-width: 100%; /* máximo de ancho en contenedor */
+  max-height: 100%; /*> VER SI QUEDA O -> HAIGHT = 100% >*/
+  min-height: 60%;
+  margin:0;
+  opacity: auto; /* se opaca la imagen según la disposición del puntero */
+  padding: 10px; /* separación interna del contenedor en relación a sus elementos */
+  /*flex: 1; /* cuanto crece el elemento en relación al resto, partiendo de 0 */
+  flex-wrap: wrap; /* permite que los elementos hijos puedan pasar a una nueva línea cuando no hay espacio suficiente en la línea principal */
+  
+  img{
+    width: 25%;
+    height: max-content;
+  }
+}
+.info > .div-info-1{
+  width: 100%;
+  max-height: 100%;
+  background: var(--color-rosa);
+  /*border: 1px solid var(--color-blanco);*/
+  padding: 10px;
+  justify-content: space-around;
+  display: flex-box;
+  margin: auto;
+  text-align: justify;
+  word-spacing: 2px;
+  p{
+    text-align: left;
+  }
+  img{
+    width: 250px;
+    height: max-content;
+    padding: 2%;
+  }
+}
+.info > .div-info-2{
+  width: 100%;
+  height: 91vh;
+  background: var(--color-negro);
+  color: var(--color-blanco);
+  padding: 10px;
+  justify-content: space-around;
+  display: flex-box;
+  margin: auto;
+  text-align: justify;
+  p{
+    text-align: left;
+  }
+}
+.info > .div-info-3{
+  width: 100%;
+  height: 90vh;
+  background: var(--color-rosa);
+  /*border: 1.5px solid var(--color-blanco);*/
+  padding: 10px;
+  justify-content: space-around;
+  display: flex-box;
+  margin: 0px;
+  text-align: justify;
+  word-spacing: 2px;
+  p{
+    text-align: left;
+  }
+}
+.info > .div-info-4{
+  width: 100%;
+  height: 88vh;
+  background: var(--color-blanco);
+  color: var(--color-negro);
+  padding: 10px;
+  justify-content:center;
+  margin: auto;
+  border: solid 1px var(--color-negro);
+  text-align: justify;
+  word-spacing: 2px;
+  p{
+    text-align: left;
+  }
+}
+.info img{
+  min-width: 150px;
+  height: max-content;
+  margin-bottom: 15px;
+  display: flex;
+}
+#texto{
+  text-align: justify;
+}
+
+/*# INICIO EFECTOS TARJETAS #*/
+#card{
+  flex: 1;
+  cursor:vertical-text;
+  transition: flex .8s ease;
+  text-align: justify;
+}
+#card:hover{
+  flex: 1.2;
+}
+.info:hover #card{
+  opacity: .65;
+}
+.info #card:hover{
+  opacity: 1;
+  /*transform: scale(1);*/
+}
+/*# FIN EFECTOS TARJETAS #*/
+
+/*> FIN SECCIÓN INFORMACIÓN BREVE <*/
+
+
+/*> INICIO FOOTER <*/
+footer{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  justify-content: center;
+}
+.footer-text{
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
+}
+
+#p{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  justify-content: last baseline;
+  display: flex;
+  padding: 10px;
+}
+p{
+  height: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.p-footer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  gap: 15px; /* Espacio entre columnas */
+  padding: 10px;
+  /*
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  text-align: start;
+  gap: 1px;
+  padding: 2px;*/
+}
+
+/*# Contenedor de texto del footer responsive #*/
+#div{
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  /*width: 90%;*/
+  /*height: auto;
+  /*justify-content: center;
+  align-items: center;*/
+  /*flex-direction: column;*/
+  /*text-align: center;*/
+  border: solid .003px rgba(128, 128, 128, 0.282);
+}
+/* Cuando el ancho sea menor o igual a 768px → 2 columnas */
+  @media (max-width: 768px) {
+    .p-footer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Opcional: para pantallas muy pequeñas → 1 columna */
+  @media (max-width: 480px) {
+    .p-footer {
+      grid-template-columns: 1fr;
+    }
+  }
+#div #p1, #p2, #p3, #p4{
+  color: var(--color-rosa);
+  text-shadow: .5px .5px .5px var(--color-blanco);
+  text-align: center;
+  text-decoration: none;
+}
+#texto-footer{
+  text-align: justify;
+  justify-content: left;
+  margin-left: 1.2%;
+}
+.btn.btn-primary{
+  background-color: var(--color-negro);
+  border: black;
+  color: rgb(101, 135, 247);
+}
+
+
+/*# INICIO SECCIÓN CONTACTOS #*/
+#contenedor-contacto{
+  padding-left: 8px;
+  padding-top: 20px;
+}
+#contenedor-enlace{
+  padding-left: 8px;
+  padding-bottom: 20px;
+}
+#imagen-whatsapp{
+  width: 55px; 
+  height: auto;
+  margin: 0 0 2% 10%;
+  box-shadow: 1px 1px 1px var(--color-blanco),
+  inset .5px .5px .5px var(--color-rosa);
+  padding: 5px;
+}
+#imagen-enlace{
+  width: 55px; 
+  height: auto;
+  margin: 0 0 2% 10%;
+  box-shadow: 1px 1px 1px var(--color-blanco),
+  inset .5px .5px .5px var(--color-rosa);
+  padding: 5px;
+}
+
+/*> FIN FOOTER <*/

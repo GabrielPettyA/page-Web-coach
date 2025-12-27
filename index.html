@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/modal.css">
+  <link rel="icon" href="/logo/LogoLu.jpeg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <title>Entrenamiento Fitness</title>
+</head>
+
+<body>
+  <!-- Sección Inicio -->
+
+  <div class="inicio">
+    <div class="div-inicio">
+      <div id="home">
+        <div>LM-coach</div>
+        <div><img id="l" src="/logo/LogoLu.jpeg" alt="Logo Entrenamiento Fitness">
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a id="ingreso" href="/inicioPage/programas.html">Programas</a>
+          <a id="contact-Event" href="#final">Contacto</a>
+          <a id="ingreso" href="#">Login</a>
+        </div>
+      </nav>
+    </div>
+
+
+  </div>
+
+
+  <section class="seccion-inicio">
+    <div class="div-info-izquierda">
+      <a id="div-info-a" href="https://www.youtube.com/shorts/arotFde5qsk?feature=share" target="_blank" rel="noopener">
+        <p id="title-div-info">Entrenamiento personalizado</p>
+        <img src="/img/coach-foto-filmacion.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+      </a>
+    </div>
+
+    <div class="info">
+      <div class="div-info-1" id="card">
+        <p>Planes a la medida</p>
+        <img src="/img/mujer-mayor-con-coach.png" alt="">
+        <p id="texto">Clases diseñadas a su medida. Se respeta su estado físico, preparación o experiencia para poder
+          brindarle la mejor clase para que usted disfrute hacer ejercicio y que continúe el camino hacia una vida más
+          saludable.<br>Acerquese para vivir una vida plena y brindándole a su cuerpo la posibilidad de mantenerse con
+          vitalidad. Contáctenos.</p>
+      </div>
+
+      <div class="div-info-2" id="card">
+        <p>Entrenamiento grupal</p>
+        <img src="/img/grupo-mujeres-con-coach.png" alt="">
+        <p id="texto">Encontrará un clima agradable con buena energía, forme parte de los entrenamientos grupales, pero
+          sin dejar de recibir la atención a sus necesidades. Nos enfocamos en crear un entorno seguro y placentero para
+          que su experiencia sea única. Contáctenos para mayor información.</p>
+      </div>
+
+      <div class="div-info-3" id="card">
+        <p>Entrenamiento a distancia</p>
+        <img src="/img/mujer-ejercitando-computadora.png" alt="">
+        <p id="texto">Ya no es escusa el no poder trasladarse fuera de su casa, el plan de entrenamiento a distancia le
+          brinda la opción de obtener sus clases personalizadas esté donde esté a través de su computadora. El sistema
+          online de entrenamiento le dará la posibilidad de poder entrenar con la coach como si estuviera con ella.
+          Contáctenos e infórmese.</p>
+      </div>
+
+      <div class="div-info-4" id="card">
+        <p>Entrenamiento asincrónico</p>
+        <img src="/img/mujer-entrenamiento-asincronico-computadora.png" alt="">
+        <p id="texto">Sí...aunque no lo crea también tenemos un plan de entrenamiento asincrónico, solo requiere de
+          internet y coordinar con nuestra coach de manera online para poder seguir su entrenamiento, el cual le dará
+          previamente en formato video para que usted lo pueda hacer cuando pueda. No hay más escusas, contáctenos para
+          informarse.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+
+    <section class="footer-text">
+      <div id="p">
+        <p>© 2024 Entrenamiento Fitness. Todos los derechos reservados.</p>
+      </div>
+
+      <div class="p-footer" id="id-footer">
+        <div id="div">
+          <p id="p1">Tipos de clases:</p>
+          <p id="texto-footer"><strong>►</strong> presencial<br><strong>►</strong> grupal<br><strong>►</strong>
+            online<br><strong>►</strong> asincrónica</p>
+        </div>
+
+        <div id="div">
+          <p id="p2">Recomendaciones:</p>
+          <p id="texto-footer">Comuníquese con la coach</p>
+          <p id="texto-footer">Elija su modalidad preferida</p>
+          <p id="texto-footer">Permita que seamos parte de su progreso</p>
+        </div>
+
+        <div id="div">
+          <p id="p3">Preguntas frecuentes:</p>
+          <section class="section-modal"">
+            <button id="contenido-modal"
+              onclick="abrirModal('¿Puedo ejercitar desde mi casa?', 'Usted puede hacer ejercicio desde su casa gracias a la implementación de la tecnología. Podrá tener sus clases con nuestra coach mediante comunicación online, pudiendo entrenar con su entrenadora de manera constante en los días y horarios previamente acordados, según sus necesidades.')">¿Puedo
+              ejercitar desde mi casa?'</button>
+            <button id="contenido-modal"
+              onclick="abrirModal('¿Es posible ejercitarme si tengo horarios rotativos?', 'Podrá ejercitarse según sus horarios gracias a los diversos métodos que manejamos, entre ellos existe los videos online, estos le permitiran observar las clases en el momento que usted lo requiera para hacer los ejercicios. Así podrá ejercitar sin preocupaciones.')">¿Es
+              posible ejercitarme si tengo horarios rotativos?</button>
+            <button id="contenido-modal" 
+              onclick="abrirModal('¿Se puede entrenar en algún gimnasio?', 'Usted podrá entrenar con nuestra coach en el gimnasio de manera personal o grupal según lo convenido, pudiendo acceder a un ambiente sano y positivo para que su entrenamiento sea placentero y se sienta a gusto.')">¿Se
+              puede entrenar en algún gimnasio?</button>
+
+            <button id="contenido-modal"
+              onclick="abrirModal('¿Tengo un seguimiento?', 'Dispondrá de un seguimiento constante y agradable, para que su experiencia sea agradable, pero bajo el control de nuestra coach, atendiendo sus necesidades para el camino sano y vital que decidió tomar en su vida.')">¿Tengo
+              un seguimiento?</button>
+          </section>
+
+          <!-- Modal único -->
+          <div id="miModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="cerrarModal()">&times;</span>
+              <h3 id="modalPregunta"></h3>
+              <p id="modalRespuesta"></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="div">
+          <p id="p4">Privacidad:</p>
+          <a href="">
+            <p id="texto-footer">Acerca de su privacidad</p>
+          </a>
+        </div>
+
+      </div>
+
+      <div id="contenedor-contacto">
+        <h4 id="titleContactos">Contactos:</h4>
+
+        <a href="https://wa.me/+5491137042115?text=Hola, me gustaría saber más sobre sus programas de entrenamiento !!!"
+          target="_blank" rel="noopener">
+          <img id="imagen-whatsapp" id="icon" src="/icon-footer/icon-contacto/Icon-WhatsApp.png" alt="Icono WhatsApp"
+            title="Contactar por WhatsApp" /></a>
+      </div>
+      <!-- 
+            <a href="https://t.me/s/Rutinas_Gym_Pro?before=227" target="_blank"><img style="width: 40px; height: auto;"id="icon"  src="/icon-footer/icon-contacto/Icon-Telegram.png" alt="Icono Telegram" title="Envía mensaje al Telegram"/></a>
+
+            <a href="https://www.snapchat.com/p/e00baf2b-1f70-4b2d-a4ce-8f13c1767b7e/530327384766464" target="_blank">
+            <img style="width: 40px; height: auto;" id="icon" src="/icon-footer/icon-contacto/Icon-Snapchat.png" alt="Icono Snapchat" title="Contactar por Snapchat"/>
+            </a>
+          </div>
+          -->
+
+      <div id="contenedor-enlace">
+        <h4 id="titleContactos">Enlace online:</h4>
+        <a href="https://www.instagram.com/pf.lulimorua_/profilecard/?igsh=ZDNudnRvd2M0NnI3 " target="_blank"
+          rel="noopener"><img id="imagen-enlace" id="icon" src="/icon-footer/icon-enlace/Icon-Instagram.png"
+            alt="Icono Instagram" title="Ingresa al Instagram" /></a>
+
+        <a href="https://www.tiktok.com/@luwasiak04?_t=ZM-8xN29bjzXzq&_r=1" target="_blank" rel="noopener">
+          <img id="imagen-enlace" id="icon" src="/icon-footer/icon-enlace/Icon-TikTok.png" alt="Icono TikTok"
+            title="Ingresar al TikTok" /></a>
+
+        <a href="https://www.youtube.com/shorts/arotFde5qsk?feature=share" target="_blank" rel="noopener">
+          <img id="imagen-enlace" id="icon" src="/icon-footer/icon-enlace/Icon-YouTube.png" alt="Icono YouTube"
+            title="Dirigete a YouTube" /></a>
+
+        <!--
+            <a href="https://www.facebook.com/Gimnasio49/" target="_blank">
+            <img style="width: 40px; height: auto;" id="icon" src="/icon-footer/icon-enlace/Icon-Facebook.png" alt="Icono Facebook" title="Ir al Facebook"/></a>
+            -->
+      </div>
+
+
+      <div id="final"></div>
+    </section>
+
+  </footer>
+  <script src="/modal-js/modal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
