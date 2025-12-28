@@ -1,6 +1,8 @@
 :root {
   --color-rosa: #e13b96;
+  --color-rosa-transparente: #bd567331;
   --color-negro: #000000;
+  --color-negro-transparente: #00000069;
   --color-blanco: #ffffff;
 }
 *{
@@ -11,22 +13,7 @@ html, body{
   width: 100%;
   min-height: 100vh;
   box-sizing: border-box;
-  background-image: linear-gradient(-208deg ,rgba(255, 255, 255, 0.496), rgba(180, 90, 119, 0.502)50%, rgba(106, 61, 75, 0.534)0%, rgba(0, 0, 0, 0.496));
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-/*> MEDIA QUERY <*//*
-@media (max-width: 678px){
-  body{
-    grid-template-rows: 50px 50px 50px 1fr 50px 50px 50px;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-      "inicio"
-      "seccion-inicio"
-      "footer-text"
-      "main-section";
-  }
-}*/
 
 /*> INICIO BODY >*/
 
@@ -40,15 +27,18 @@ footer{
 /* FIN DEL BODY PARA ESTABLECER AL FOOTER DEBAJO DE PÁGINA */
 
 /* SECCIÓN BARRA DE NAVEGACIÓN */
-
-
+.inicio{
+  width: 100%;
+  height: auto;
+  padding: 0 5% 0 2%;
+}
 .div-inicio{
   column-gap: 1%;
   display: flex;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  padding: 2%;
+  padding: .5%;
   position: sticky;
   top: 0px;
 }
@@ -77,21 +67,22 @@ footer{
   height: auto;
   border-radius: 10px;
 }
-.container-fluid{
-  width: 100%;
-  height: auto;
+.container-fluid li{
+  width: 30%;
+  height: 100%;
   display: flex;
   justify-content: space-around;
   gap: 10px;
+  list-style: none;
 }
-#ingreso, #contact-Event{
+#ingreso {
   width: 250px;
   height: auto;
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-size: 1.1em;
   text-align: center;
-  box-shadow: inset .5px .5px 0px var(--color-negro), 1px 1px 1px var(--color-blanco);
+  /*box-shadow: inset .5px .5px 0px var(--color-negro), 1px 1px 1px var(--color-blanco);*/
   display: block;
   justify-items: center;
   align-items: center;
@@ -122,58 +113,155 @@ a{
 }
 /* FIN SECCIÓN INGRESOS */
 
+/*> INICIO REEL TEXTO INFINITO <*/
+.contenedor-reel-texto{
+  height: auto;
+  display: flex;
+  margin: 0px 15px 15px 15px;
+  font-family: sans-serif;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+}
+.contenedor {
+  width: 100%;
+  margin: auto;
+  display:flex;
+  overflow: hidden;
+  background: var(--color-rosa);
+  padding: 2px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.pista {
+  display: flex;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  animation: mover 30s linear infinite;
+}
+.pista #inicio-reel-texto{
+  width: 100vw;
+  height: 100%;
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
+  text-shadow: 0px 0px 10px var(--color-rosa);
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.pista span {
+  padding: 0 2rem;
+  font-size: 1.2; /* Escala con el ancho */
+}
+
+/* Pausa al pasar el mouse */
+.contenedor:hover .pista {
+  animation-play-state: paused;
+}
+
+@keyframes mover {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+/*> FIN REEL TEXTO INFINITO <*/
+
+
+
+
+/*# Inicio efectos iluminación de enlaces de navbar #*/
+/* Efecto de iluminación con pseudo-elemento */
+
+
+
+/*# Fin efectos iluminación de enlaces de navbar #*/
+
+
+
+
+
 /*> INICIO SECCIÓN INFORMACIÓN BREVE <*/
 .seccion-inicio{
   width: 100%;
   height: 100%;
-  background-color: var(--color-rosa); /*> ELIMINAR AL TERMINAR <*/
-}
-
-.inicio{
-  width: 100%;
-  height: auto;
+  margin: 0;
 }
 .div-info-izquierda{
-  width: 100%;
+  max-width: 50%;
+  border: solid .2px var(--color-negro);
+  border-radius: 10px;
   height: auto;
-  padding: 1%;
+  padding: 10px;
   justify-content: center;
-  margin: auto;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   img{
     width: 30%;
-    height: auto;
-    padding: 2%;
+    height: auto;  
   }
   #div-info-a{
     width: 100%;
-    height: auto;
+    height: 100%;
     justify-content: center;
     margin: auto;
     align-items: center;
     display: flex;
     text-decoration: none;
     border: solid 1.2px var(--color-blanco);
+    border-radius: 10px;
+    background-color: red;
+  }
+  .div-texto{
+    width: 100%;
+    height: auto;
   }
   #title-div-info{
-    font-size: 2rem;
     color: var(--color-negro);
-    text-shadow: 1px 1px 1px var(--color-blanco);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: auto;
+  }
+  .div-imagen{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .div-imagen img{
+    min-width: 70%;
+    height: 70%;
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px;
   }
 }
+
+
+/*# INICIO DE TBODY #*/
+.div-info-izquierda,.info,.seccion-inicio{
+  background-image: url(/img/mujer-entrenando-profesional.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
 .info{
+  /*ackground-color: rgba(255, 255, 255, 0.8);*/
   display: flex; /* activa Flexbox para alinear y distribuir elementos */
-  gap: 20px; /* se define el espacio entre elementos */
+  gap: 22px; /* se define el espacio entre elementos */
   max-width: 100%; /* máximo de ancho en contenedor */
   max-height: 100%; /*> VER SI QUEDA O -> HAIGHT = 100% >*/
   min-height: 60%;
-  margin:0;
+  margin:auto;
   opacity: auto; /* se opaca la imagen según la disposición del puntero */
   padding: 10px; /* separación interna del contenedor en relación a sus elementos */
-  /*flex: 1; /* cuanto crece el elemento en relación al resto, partiendo de 0 */
+  flex: 1; /* cuanto crece el elemento en relación al resto, partiendo de 0 */
   flex-wrap: wrap; /* permite que los elementos hijos puedan pasar a una nueva línea cuando no hay espacio suficiente en la línea principal */
-  
+
   img{
     width: 25%;
     height: max-content;
@@ -182,8 +270,9 @@ a{
 .info > .div-info-1{
   width: 100%;
   max-height: 100%;
-  background: var(--color-rosa);
-  /*border: 1px solid var(--color-blanco);*/
+  /*background: var(--color-rosa);*/
+  border: 1px solid var(--color-blanco);
+  color: var(--color-blanco);
   padding: 10px;
   justify-content: space-around;
   display: flex-box;
@@ -216,8 +305,8 @@ a{
 .info > .div-info-3{
   width: 100%;
   min-height: 90dvh;
-  background: var(--color-rosa);
-  /*border: 1.5px solid var(--color-blanco);*/
+  /*background: var(--color-rosa);*/
+  color: var(--color-blanco);
   padding: 10px;
   justify-content: space-around;
   display: flex-box;
@@ -230,8 +319,8 @@ a{
 }
 .info > .div-info-4{
   width: 100%;
-  min-height: 88dvh;
-  background: var(--color-blanco);
+  min-height: 88vh;
+  background: var(--color-rosa-transparente);
   color: var(--color-negro);
   padding: 10px;
   justify-content:center;
@@ -306,15 +395,6 @@ p{
   grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
   gap: 15px; /* Espacio entre columnas */
   padding: 10px;
-  /*
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex: 1;
-  justify-content: space-around;
-  text-align: start;
-  gap: 1px;
-  padding: 2px;*/
 }
 
 /*# Contenedor de texto del footer responsive #*/

@@ -1,0 +1,17 @@
+  /* INICIO RESALTADOR DE ENLACE */
+.resaltado {
+  background-color: rgba(255, 255, 0, 0.342);
+  border:  yellowgreen;
+  border-radius: 3px;
+  color: black;
+  text-shadow: 1px 1px 1px white; 
+}
+nav a {
+  /*text-decoration: none;*/
+  color: rgb(0, 0, 0);
+}
+nav a.activo {
+  font-weight: bold;
+  color: rgb(25, 221, 139);
+}
+/* FIN RESALTADOR DE ENLACE */
