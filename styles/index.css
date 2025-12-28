@@ -1,6 +1,6 @@
 :root {
   --color-rosa: #e13b96;
-  --color-rosa-transparente: #bd567331;
+  --color-rosa-transparente: #bd56735d;
   --color-negro: #000000;
   --color-negro-transparente: #00000069;
   --color-blanco: #ffffff;
@@ -242,12 +242,18 @@ a{
 
 
 /*# INICIO DE TBODY #*/
+/*> SECCIÓN DE IMAGEN FIJA DE FONDO DE PANTALLA <*/
 .div-info-izquierda,.info,.seccion-inicio{
   background-image: url(/img/mujer-entrenando-profesional.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+}
+
+.espaciador{
+  width: auto;
+  height: 100px; /* permite un scoll largo */
 }
 .info{
   /*ackground-color: rgba(255, 255, 255, 0.8);*/
