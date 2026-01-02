@@ -65,7 +65,7 @@ footer{
   display: flex;
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .container-fluid li{
   width: 30%;
@@ -80,7 +80,8 @@ footer{
   height: auto;
   text-decoration: none;
   color: rgb(0, 0, 0);
-  font-size: 1.1em;
+  font-size: 1.2em;
+  text-shadow: 1px 1px .5px var(--color-rosa);
   text-align: center;
   /*box-shadow: inset .5px .5px 0px var(--color-negro), 1px 1px 1px var(--color-blanco);*/
   display: block;
@@ -89,13 +90,13 @@ footer{
   margin: auto;
   padding: 2px;
   border-radius: 10px;
-  transition: all 1.5s ease-out;
+  transition: all 1.5s ease;
 }
 #ingreso:hover, #contact-Event:hover {
   color: #fff;
-  transition-delay: .7s;
-  animation: efect 2s forwards;
-  background: radial-gradient(circle, var(--color-rosa) 0.2em, transparent 0.3em) 6em 6em / 1em 1em,
+  transition-delay: 3s ease;
+  animation: efect .7s forwards ease;
+  background: radial-gradient(circle, var(--color-rosa) 0.2em, transparent 0.3em)   6em 6em / 1em 1em,
               radial-gradient(circle, var(--color-negro) 0.2em, transparent 0.3em) 0 0 / 1em 1em;
 }
 a{
@@ -106,18 +107,20 @@ a{
     background-size: 2.375em 2.375em, 0.1em 0.1em;
   }
 }
+
 #ingreso:hover {
-  background-color: rgb(62, 91, 154);
-  color: white;
-  border-color: white;
+  background-color: var(--color-negro-transparente);
+  color: var(--color-blanco);
+  border-color: var(--color-negro);
 }
 /* FIN SECCIÓN INGRESOS */
 
 /*> INICIO REEL TEXTO INFINITO <*/
 .contenedor-reel-texto{
+  width: 100%;
   height: auto;
   display: flex;
-  margin: 0px 15px 15px 15px;
+  margin: 0px;
   font-family: sans-serif;
   background: #111;
   color: #fff;
@@ -139,7 +142,7 @@ a{
   justify-content: center;
   align-items: center;
   margin: auto;
-  animation: mover 30s linear infinite;
+  animation: mover 38s linear infinite;
 }
 .pista #inicio-reel-texto{
   width: 100vw;
@@ -170,76 +173,72 @@ a{
 
 
 
-
-/*# Inicio efectos iluminación de enlaces de navbar #*/
-/* Efecto de iluminación con pseudo-elemento */
-
-
-
-/*# Fin efectos iluminación de enlaces de navbar #*/
-
-
-
-
-
 /*> INICIO SECCIÓN INFORMACIÓN BREVE <*/
+/* INICIO CONTENEDOR GENERAL DE LA SECCIÓN */
 .seccion-inicio{
   width: 100%;
   height: 100%;
   margin: 0;
 }
+/* FIN CONTENEDOR GENERAL DE LA SECCIÓN */
+
+/* Inicio sección video presentación */
 .div-info-izquierda{
-  max-width: 50%;
-  border: solid .2px var(--color-negro);
+  max-width: 30%;
+  max-height: 50%;
+  border: solid .2px var(--color-rosa);
   border-radius: 10px;
   height: auto;
   padding: 10px;
   justify-content: center;
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
-  img{
-    width: 30%;
-    height: auto;  
-  }
+  margin-left: 1.2%;
+
   #div-info-a{
-    width: 100%;
-    height: 100%;
-    justify-content: center;
+    width: 90%;
+    height: 50%;
     margin: auto;
     align-items: center;
-    display: flex;
+    display: block;
     text-decoration: none;
     border: solid 1.2px var(--color-blanco);
-    border-radius: 10px;
-    background-color: red;
+    border-radius: 5px;
+    background-color: var(--color-rosa-transparente);
   }
   .div-texto{
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
   #title-div-info{
-    color: var(--color-negro);
+    color: var(--color-blanco);
     font-size: 1.5rem;
-    text-align: center;
-    margin: auto;
+    padding: 10px;
   }
   .div-imagen{
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
+    margin: auto;
+    display: block;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid 4px var(--color-blanco);
+    box-shadow: 1px 1px 5px var(--color-negro);
   }
-  .div-imagen img{
-    min-width: 70%;
-    height: 70%;
-    border-radius: 20px;
+  img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
     margin: auto;
     padding: 10px;
   }
 }
-
+/* Fin sección video */
 
 /*# INICIO DE TBODY #*/
 /*> SECCIÓN DE IMAGEN FIJA DE FONDO DE PANTALLA <*/
@@ -249,6 +248,8 @@ a{
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  width: 100%;
+  height: 100%;
 }
 
 .espaciador{
@@ -339,7 +340,8 @@ a{
   }
 }
 .info img{
-  min-width: 150px;
+
+  min-width: 77%;
   height: max-content;
   margin-bottom: 15px;
   display: flex;
@@ -473,5 +475,12 @@ p{
   inset .5px .5px .5px var(--color-rosa);
   padding: 5px;
 }
-
 /*> FIN FOOTER <*/
+
+/*# MEDIA QUERY #*/
+@media screen and (max-width: 650px){
+  .navbar{
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
