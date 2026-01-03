@@ -277,7 +277,7 @@ a{
   color: var(--color-blanco);
   padding: 10px;
   justify-content: space-around;
-  display: flex-box;
+  display: flexbox;
   margin: auto;
   text-align: justify;
   word-spacing: 2px;
@@ -285,7 +285,7 @@ a{
     text-align: left;
   }
   img{
-    width: 250px;
+    width: 100vw;
     height: max-content;
     padding: 2%;
   }
@@ -297,7 +297,7 @@ a{
   color: var(--color-blanco);
   padding: 10px;
   justify-content: space-around;
-  display: flex-box;
+  display: flexbox;
   margin: auto;
   text-align: justify;
   p{
@@ -311,8 +311,8 @@ a{
   color: var(--color-blanco);
   padding: 10px;
   justify-content: space-around;
-  display: flex-box;
-  margin: 0px;
+  display: flexbox;
+  margin: auto;
   text-align: justify;
   word-spacing: 2px;
   p{
@@ -326,6 +326,7 @@ a{
   color: var(--color-blanco);
   padding: 10px;
   justify-content:center;
+  display: flexbox;
   margin: auto;
   border: solid 1px var(--color-rosa);
   text-align: justify;
@@ -336,7 +337,7 @@ a{
 }
 .info img{
   min-width: 77%;
-  height: max-content;
+  height: 100%;
   margin-bottom: 15px;
   display: flex;
 }
