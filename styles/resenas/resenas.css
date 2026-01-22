@@ -150,7 +150,9 @@ a{
   justify-content: center;
   align-items: center;
 }
+/* FIN LOGO WHATSAPP */
 
+/* INICIO LOGO GIRATORIO */
 .section-mundo{
   display: flex;
   justify-content: center;
@@ -159,6 +161,8 @@ a{
   width: 300px;
   margin: auto;  
 }
+
+/*> Efecto 3D Logo Circular <*/
 .mundo {
   font-size: 2rem;
   color: var(--color-crema-blanco);
@@ -179,7 +183,7 @@ a{
       background-position: 0 0;
   }
   to {
-      background-position: -4220% 0;
+      background-position: -4250% 0;
   }
 }
 .lm-coach{
@@ -195,3 +199,5 @@ a{
   align-items: center;
 }
 /* Fin de animación de desplazamiento horizontal */
+
+/* FIN LOGO GIRATORIO */
