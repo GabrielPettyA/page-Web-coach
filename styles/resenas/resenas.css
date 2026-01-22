@@ -169,8 +169,8 @@ a{
   background-size: cover;
   background-repeat: repeat-x; /* Repetir horizontalmente */
   animation: rotarMundo 10s linear infinite;
-  box-shadow: inset -20px 0 40px rgba(0,0,0,0.6), /* sombra interna para efecto 3D */
-              0 0 20px rgba(0,0,0,0.8); /* sombra externa */
+  box-shadow: inset -20px 0 40px rgba(0, 0, 0, 0.781), /* sombra interna para efecto 3D */
+              0 0 20px rgba(0, 0, 0, 0.834); /* sombra externa */
 }
 
 /* Animación de desplazamiento horizontal */
@@ -179,7 +179,7 @@ a{
       background-position: 0 0;
   }
   to {
-      background-position: -4250% 0;
+      background-position: -4220% 0;
   }
 }
 .lm-coach{
@@ -194,3 +194,4 @@ a{
   justify-content: center;
   align-items: center;
 }
+/* Fin de animación de desplazamiento horizontal */
