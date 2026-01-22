@@ -1,0 +1,196 @@
+:root{
+  --color-rosa: rgb(190, 35, 35, .4);
+  --color-negro: rgb(0, 0, 0);
+  --color-blanco: rgb(255, 255, 255);
+  --color-crema-blanco: rgb(245, 222, 179);
+}
+body, html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/luPatadaBurro.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+/* INICIO TÍTULO PRINCIPAL */
+#titulo-resena{
+  font-size: 2.2rem;
+  color: var(--color-blanco);
+  text-align: center;
+  text-shadow: 2px 3px 2px var(--color-negro);
+}
+/* FIN TÍTULO PRINCIPAL */
+
+/* INICIO DE SECCIÓN IMAGEN DE FONDO Y TEXTO EN MEDIO DE RESEÑAS */
+.img-fondo{
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/luEspalda2.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  border: groove 5px var(--color-negro);
+}
+#titulo{
+  color: var(--color-blanco);
+  font-size: 3.5em;
+  text-align: center;
+  margin-top: 30%;
+  text-shadow: 1px 1px 2px var(--color-negro);
+}
+#texto{
+  color: var(--color-blanco);
+  font-size: 2em;
+  text-align: justify;
+  text-align: center;
+  text-shadow: 1px 1px 2px var(--color-negro);
+  margin: 13% 0 25% 0;
+}
+.resenas-cambio{
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+}
+#img-resenas-cambio{
+  width: 48vw;
+  height: 100%;
+  margin: auto;
+  margin-bottom: 10%;
+}
+/* FIN DE SECCIÓN IMAGEN DE FONDO Y TEXTO EN MEDIO DE RESEÑAS */
+
+/* INICIO DE SECCIÓN DE RESEÑAS */
+.container-text-resenas{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.row-resenas{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+  background-color: var(--color-rosa);
+}
+#r1{
+  border: solid 1.5px var(--color-negro);
+  margin: 5% 6% 0 0;
+  width: auto;
+  height: 15em;
+}
+#r2{
+  border: solid 1.5px var(--color-negro);
+  margin: 5% 30% 0% 0%;
+  width: auto;
+  height: 15em;
+}
+#r3{
+  border: solid 1.5px var(--color-negro);
+  margin: 8% 0% 10% 0%;
+  width: auto;
+  height: 15em;
+}
+.img-resenas{
+  max-width: 100%;
+  min-width: 50%;
+  max-height: 100%;
+  min-height: 50%;
+  /*object-fit: cover;*/
+  display: flex;
+  justify-content: auto;
+  align-items: auto;
+  /*background-color: var(--color-rosa);*/
+  /*border: solid 2px var(--color-negro);*/
+}
+#resenas{
+  width: 100%;
+  height: auto;
+}
+/* FIN DE SECCIÓN DE RESEÑAS */
+
+/* INICIO LOGO WHATSAPP */
+.icon-whatsApp{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  background-color: black;
+  margin:auto;
+  display: flex;
+}
+.whatsApp{
+  width: 100%;
+  height: 100%;
+  color: var(--color-blanco);
+  font-size: 1.5rem;
+  padding: 5%;
+}
+#imagen-whatsapp{
+  width: 10%;
+  height: auto;
+}
+a{
+  width: auto;
+  height: auto;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-mundo{
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  height: 300px;
+  width: 300px;
+  margin: auto;  
+}
+.mundo {
+  font-size: 2rem;
+  color: var(--color-crema-blanco);
+  width: 230px;
+  height: auto;
+  border-radius: 50%; /* Forma circular */
+  background-image: url('/logo/LogoLu.jpeg');
+  background-size: cover;
+  background-repeat: repeat-x; /* Repetir horizontalmente */
+  animation: rotarMundo 10s linear infinite;
+  box-shadow: inset -20px 0 40px rgba(0,0,0,0.6), /* sombra interna para efecto 3D */
+              0 0 20px rgba(0,0,0,0.8); /* sombra externa */
+}
+
+/* Animación de desplazamiento horizontal */
+@keyframes rotarMundo {
+  from {
+      background-position: 0 0;
+  }
+  to {
+      background-position: -4250% 0;
+  }
+}
+.lm-coach{
+  width: 100%;
+  height: auto;
+  font-size: 3rem;
+  color: var(--color-blanco);
+  text-shadow: 1.5px 1.5px 2px var(--color-negro);
+  box-shadow: 2px 2px 2px var(--color-negro), 2px -2px 2px var(--color-rosa);
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
