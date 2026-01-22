@@ -36,7 +36,6 @@ body{
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  border: groove 5px var(--color-negro);
 }
 #titulo{
   color: var(--color-blanco);
@@ -186,6 +185,8 @@ a{
       background-position: -4250% 0;
   }
 }
+/* Fin de animación de desplazamiento horizontal */
+
 .lm-coach{
   width: 100%;
   height: auto;
@@ -198,6 +199,5 @@ a{
   justify-content: center;
   align-items: center;
 }
-/* Fin de animación de desplazamiento horizontal */
 
 /* FIN LOGO GIRATORIO */
