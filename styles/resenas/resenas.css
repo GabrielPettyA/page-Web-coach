@@ -173,7 +173,11 @@ a{
   background-repeat: repeat-x; /* Repetir horizontalmente */
   animation: rotarMundo 10s linear infinite;
   box-shadow: inset -20px 0 40px rgba(0, 0, 0, 0.781), /* sombra interna para efecto 3D */
-              0 0 20px rgba(0, 0, 0, 0.834); /* sombra externa */
+              0 0 20px rgba(0, 0, 0, 0.834), /* sombra externa */
+              /* siguientes efectos para crear luz del lado
+              izquierdo */
+              -3px -2px 7px var(--color-blanco),
+              -.5px 0px 1px var(--color-negro);
 }
 
 /* Animación de desplazamiento horizontal */
