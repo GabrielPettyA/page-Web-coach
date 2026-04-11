@@ -233,7 +233,7 @@ a{
   cursor: pointer;
 
   img{
-  width: 100%;
+  width: 50%;
   height: auto;
   border-top-left-radius: 110px;
   border-top: inset 5px var(--color-negro);
