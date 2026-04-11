@@ -240,6 +240,11 @@ a{
   border-bottom: solid 3px var(--color-negro);
   margin: auto;
   padding: 10px;
+  transition: all 0.3s ease-in-out;
+  }
+
+  img:hover{
+    scale: 1.1;
   }
 }
 /* Fin sección video */
