@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -10,48 +10,87 @@
 </head>
 
 <body>
+  <!-- Botón Volver al Inicio -->
+  <a href="/index.html" class="btn-volver-inicio" aria-label="Volver a la página principal">
+    <span class="flecha-volver">←</span> Volver al Inicio
+  </a>
+
   <div class="container-text-resenas">
-    
-    <section class="section-mundo">
+
+    <header class="section-mundo">
       <p class="mundo">RESEÑAS:</p>
-    </section>
-    
+    </header>
+
     <p class="lm-coach">LM-coach</p>
-    <div class="row-resenas" id="r1">
-      <div class="img-resenas"><img id="resenas" src="/img-resenas/reseña-1.jpeg" alt=""></div>
-    </div>
-    <div class="row-resenas" id="r2">
-      <div class="img-resenas"><img id="resenas" src="/img-resenas/reseña-2.jpeg" alt=""></div>
-    </div>
-    <div class="row-resenas" id="r3">
-      <div class="img-resenas"><img id="resenas" src="/img-resenas/reseña-3.jpeg" alt=""></div>
-    </div>
 
-    <div class="img-fondo">
-      <h1 id="titulo">LM-coach</h1>
-      <p id="texto">¿Qué esperas? No postergues tu cambio, es tu oportunidad !!!</p>
-
-      <div class="resenas-cambio">
-        <img id="img-resenas-cambio" src="/img-resenas/reseña-cambio.jpeg" alt="">
-        <img id="img-resenas-cambio" src="/img-resenas/reseña-cambio2.jpeg" alt="">
-        <img id="img-resenas-cambio" src="/img-resenas/reseña-4.jpeg" alt="">
-        <img id="img-resenas-cambio" src="/img-resenas/reseña-5.jpeg" alt="">
-      </div>
-
-      <div class="icon-whatsApp">
-        <div class="whatsApp"> Contactame por WhatsApp
-          <a href="https://wa.me/+5491137042115?text=Hola, me gustaría saber más sobre sus programas de entrenamiento !!!"
-            target="_blank" rel="noopener">
-            <img id="imagen-whatsapp" id="icon" src="/icon-footer/icon-contacto/Icon-WhatsApp.png" alt="Icono WhatsApp"
-              title="Contactar por WhatsApp" /></a>
-              <img id="whatsApp-code" src="/img-resenas/WhatsApp.png" alt="">
+    <!-- Sección de Reseñas Principales -->
+    <main class="wrapper-resenas-items">
+      <div class="grid-resenas-principales">
+        <div class="card-row-resena" onclick="ampliarImagen(this)">
+          <img class="img-fluid-resena" src="/img-resenas/reseña-1.jpeg" alt="Reseña de entrenamiento 1">
+        </div>
+        <div class="card-row-resena" onclick="ampliarImagen(this)">
+          <img class="img-fluid-resena" src="/img-resenas/reseña-2.jpeg" alt="Reseña de entrenamiento 2">
+        </div>
+        <div class="card-row-resena" onclick="ampliarImagen(this)">
+          <img class="img-fluid-resena" src="/img-resenas/reseña-3.jpeg" alt="Reseña de entrenamiento 3">
         </div>
       </div>
-    </div>
 
+      <section class="img-fondo-seccion">
+        <h1 id="titulo">LM-coach</h1>
+        <p id="texto-llamado">¿Qué esperas? No postergues tu cambio, es tu oportunidad !!!</p>
+
+        <!-- Galería de cambios físicos -->
+        <div class="resenas-cambio">
+          <div class="item-cambio-wrapper" onclick="ampliarImagen(this)">
+            <img class="img-resenas-cambio-item" src="/img-resenas/reseña-cambio.jpeg" alt="Evolución física cambio 1">
+          </div>
+          <div class="item-cambio-wrapper" onclick="ampliarImagen(this)">
+            <img class="img-resenas-cambio-item" src="/img-resenas/reseña-cambio2.jpeg" alt="Evolución física cambio 2">
+          </div>
+          <div class="item-cambio-wrapper" onclick="ampliarImagen(this)">
+            <img class="img-resenas-cambio-item" src="/img-resenas/reseña-4.jpeg" alt="Reseña de usuario 4">
+          </div>
+          <div class="item-cambio-wrapper" onclick="ampliarImagen(this)">
+            <img class="img-resenas-cambio-item" src="/img-resenas/reseña-5.jpeg" alt="Reseña de usuario 5">
+          </div>
+        </div>
+
+        <!-- Bloque de Contacto con QR Reducido -->
+        <div class="icon-whatsApp">
+          <div class="whatsApp">
+            <span class="texto-whatsapp-label">Contactame por WhatsApp</span>
+            <div class="contacto-flex-layout">
+              <a id="secure-whatsapp" class="whatsapp-trigger" target="_blank" rel="noopener noreferrer"
+                aria-label="Enviar mensaje de consulta por WhatsApp">
+                <img class="imagen-whatsapp-icono" src="/icon-footer/icon-contacto/Icon-WhatsApp.png"
+                  alt="Icono de enlace a WhatsApp">
+              </a>
+              <img class="qr-code-reducido" src="/img-resenas/WhatsApp.png" alt="Código QR de contacto WhatsApp">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
   </div>
+
+  <!-- Visor Flotante Moderno (Lightbox) -->
+  <div id="visorFlotante" class="visor-lightbox" onclick="cerrarVisor()">
+    <span class="cerrar-visor">&times;</span>
+    <img class="contenido-visor" id="imgAmpliada" alt="Reseña ampliada">
   </div>
+
+  <!-- Visor Flotante Moderno (Lightbox) -->
+  <div id="visorFlotante" class="visor-lightbox" onclick="cerrarVisor()">
+    <span class="cerrar-visor">&times;</span>
+    <!-- Se añade alt="" para eliminar el error en rojo del editor -->
+    <img class="contenido-visor" id="imgAmpliada" alt="Reseña ampliada">
+  </div>
+
+  <!-- Vinculamos tu JS unificado para que controle el botón de esta página también -->
+  <script src="/js/index.js"></script>
 </body>
 
 </html>

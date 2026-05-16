@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -8,141 +8,142 @@
   <link rel="stylesheet" href="/styles/modal.css">
   <link rel="stylesheet" href="/styles/resaltador-enlaces.css">
   <link rel="icon" href="/logo/LogoLu.jpeg" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-  <title>Entrenamiento Fitness</title>
+  <!-- Bootstrap 5.3.3 Estable 
+  <link href="https://jsdelivr.net" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+-->
+  <title>Luciana Coach</title>
 </head>
 
-
 <body>
-
   <!-- Sección Inicio -->
-
-  <div class="inicio">
+  <header class="inicio">
     <div class="div-inicio">
       <div id="home">
-        <div>LM-coach</div>
-        <div><img id="l" src="/logo/LogoLu.jpeg" alt="Logo Entrenamiento Fitness">
-          <div>
-            LuLiMorúa
-          </div>
+        <div class="brand-text">LM-coach</div>
+        <div class="logo-contenedor">
+          <!-- Solución: Usamos un div contenedor para que la animación funcione en todos los navegadores -->
+          <div id="l" class="logo-giratorio" aria-label="Logo Entrenamiento Fitness"></div>
+          <div class="coach-name">LuLiMorúa</div>
         </div>
       </div>
 
-      <nav class="navbar navbar-expand-lg body-tertiary">
-        <ul class="container-fluid">
-          <li><a id="ingreso" href="/inicioPage/programas.html">Programas</a></li>
-          <li><a id="ingreso" href="#final">Contacto</a></li>
-          <li><a id="ingreso" href="#p3">Preguntas frecuentes</a></li>
-          <li><a id="ingreso" href="/inicioPage/resenas.html">Reseñas</a></li>
+      <nav class="navbar navbar-expand-lg">
+        <ul class="container-fluid list-unstyled mb-0">
+          <li><a class="btn-ingreso" href="/inicioPage/programas.html">Programas</a></li>
+          <li><a class="btn-ingreso" href="#final">Contacto</a></li>
+          <li><a class="btn-ingreso" href="#p3">Preguntas frecuentes</a></li>
+          <li><a class="btn-ingreso" href="/inicioPage/resenas.html">Reseñas</a></li>
         </ul>
       </nav>
     </div>
-  </div>
+</header>
 
+  <!-- Reel de Texto Infinito -->
   <div class="contenedor-reel-texto">
     <div class="contenedor">
       <div class="pista">
+        <!-- Bloque Original (Grupo 1) -->
+        <span class="item-reel">🚀 Bienvenida/o a tu página web "LM-coach" 🚀</span>
+        <span class="item-reel">📒 Entrenamiento personal, grupal, presencial u online</span>
+        <span class="item-reel">🔥 Entrenamiento y seguimiento todos los meses</span>
+        <span class="item-reel">💡 Novedades y tips</span>
+        <span class="item-reel">☎ Contactame y comenzá a alcanzar tus objetivos!!!</span>
+        <span class="item-reel">📒 Adaptamos los planes según tus necesidades</span>
+        <span class="item-reel">📱 ☎ Contactame y dejanos ser parte de tus metas, juntos vamos a lograrlo!!!</span>
+        <span class="item-reel">🔥 Adaptá tus ejercicios de la mejor manera</span>
+        <span class="item-reel">🔥 Recomendaciones para aprovechar al máximo los ejercicios</span>
+        <span class="item-reel">🚀 Vení "LM-coach" es tu compañía para mejorar tu vida !!!</span>
 
-        <span id="inicio-reel-texto">🚀 Bienvenida/o a tu página web "LM-coach" 🚀</span>
-        <span>📒 Entrenamiento personal, grupal, presencial u online</span>
-        <span>🔥 Entrenamiento y seguimiento todos los meses</span>
-        <span>💡 Novedades y tips</span>
-        <span>&#9742; Contactame y comenzá a alcanzar tus objetivos!!!</span>
-        <span>📒 Adaptamos los planes según tus necesidades</span>
-        <span>📱 &#9742; Contactame y dejanos ser parte de tus metas, justas vamos a lograrlo!!!</span>
-        <span>🔥 Adaptá tus ejercicios de la mejor manera</span>
-        <span>🔥 Recomendaciones para aprovechar al máximo los ejercicios</span>
-        <span>🚀 Vení "LM-coach" es tu companía para mejorar tu vida !!!</span>
-
-
-        <!-- Duplicamos para efecto continuo 
-          <span>🚀 Bienvenida/o a tu página web "LM-coach"</span>
-          <span>🔥 Entrenamiento y seguimiento todos los meses</span>
-          <span>💡 Novedades y tips</span>
-          <span>📱 Adaptamos los ejercicios a tus necesidades</span>
-          <span>&#9742; Adaptamos los ejercicios a tus necesidades</span>-->
+        <!-- Bloque Duplicado Idéntico (Grupo 2 para el efecto infinito) -->
+        <span class="item-reel">🚀 Bienvenida/o a tu página web "LM-coach" 🚀</span>
+        <span class="item-reel">📒 Entrenamiento personal, grupal, presencial u online</span>
+        <span class="item-reel">🔥 Entrenamiento y seguimiento todos los meses</span>
+        <span class="item-reel">💡 Novedades y tips</span>
+        <span class="item-reel">☎ Contactame y comenzá a alcanzar tus objetivos!!!</span>
+        <span class="item-reel">📒 Adaptamos los planes según tus necesidades</span>
+        <span class="item-reel">📱 ☎ Contactame y dejanos ser parte de tus metas, juntos vamos a lograrlo!!!</span>
+        <span class="item-reel">🔥 Adaptá tus ejercicios de la mejor manera</span>
+        <span class="item-reel">🔥 Recomendaciones para aprovechar al máximo los ejercicios</span>
+        <span class="item-reel">🚀 Vení "LM-coach" es tu compañía para mejorar tu vida !!!</span>
       </div>
     </div>
   </div>
 
 
-  <div class="div-info-izquierda">
-    <div class="div-texto" id="div-info-a">
-      <p id="title-div-info">¿Querés saber de mí ?</p>
-      <!--
-        <img src="/img/coach-foto-filmacion.png" alt="Video presentación coach">-->
-    </div>
-
-    <div>
+  <!-- Sección Quién Soy -->
+  <main class="seccion-principal-fondo">
+    <section class="div-info-izquierda">
+      <div class="div-texto" id="div-info-a">
+        <p id="title-div-info">¿Querés saber de mí?</p>
+      </div>
       <div class="div-imagen">
-        <a href="https://www.instagram.com/reel/DWkoKbhCjP2/?igsh=Z3drNWoyOTIzM2kz" target="_blank" rel="noopener">
-          <img src="/img/pesaFoto.jpeg" class="img" alt="foto de pesa" title="Video presentación coach">
+        <a href="instagram.com" target="_blank" rel="noopener">
+          <img src="/img/presentacion-lu.png" class="img-fluid presentation-img" alt="Foto de presentación"
+            title="Video presentación coach">
         </a>
       </div>
-    </div>
+    </section>
 
-
-  </div>
-
-  <tbody class="tbody-info">
-    <div class="info">
-      <div class="div-info-1" id="card">
-        <p id="titulo-card">Planes a la medida</p>
-        <img src="/img/luCorrigeEjercicio.jpeg" alt="">
-        <p id="texto">Clases diseñadas a su medida. Se respeta su estado físico, preparación o experiencia para poder
-          brindarle la mejor clase para que usted disfrute hacer ejercicio y que continúe el camino hacia una vida más
-          saludable.<br>Acerquese para vivir una vida plena y brindándole a su cuerpo la posibilidad de mantenerse con
+    <!-- Tarjetas de Servicios -->
+    <section class="info">
+      <div class="card-servicio">
+        <p class="titulo-card">Planes a la medida</p>
+        <div class="img-card-container">
+          <img src="/img/luCorrigeEjercicio.jpeg" alt="Clases a la medida">
+        </div>
+        <p class="texto-card">Clases diseñadas a su medida. Se respeta su estado físico, preparación o experiencia para
+          poder brindarle la mejor clase para que usted disfrute hacer ejercicio y que continúe el camino hacia una vida
+          más saludable. Acérquese para vivir una vida plena y brindándole a su cuerpo la posibilidad de mantenerse con
           vitalidad. Contáctenos.</p>
       </div>
 
-      <div class="div-info-2" id="card">
-        <p id="titulo-card">Entrenamiento grupal</p>
-        <img src="/img/fotoGrupalPresencial.jpeg" alt="">
-        <p id="texto">Encontrará un clima agradable con buena energía, forme parte de los entrenamientos grupales,
-          pero
-          sin dejar de recibir la atención a sus necesidades. Nos enfocamos en crear un entorno seguro y placentero
-          para
-          que su experiencia sea única. Contáctenos para mayor información.</p>
+      <div class="card-servicio">
+        <p class="titulo-card">Entrenamiento grupal</p>
+        <div class="img-card-container">
+          <img src="/img/fotoGrupalPresencial.jpeg" alt="Entrenamiento grupal">
+        </div>
+        <p class="texto-card">Encontrará un clima agradable con buena energía, forme parte de los entrenamientos
+          grupales, pero sin dejar de recibir la atención a sus necesidades. Nos enfocamos en crear un entorno seguro y
+          placentero para que su experiencia sea única. Contáctenos para mayor información.</p>
       </div>
 
-      <div class="div-info-3" id="card">
-        <p id="titulo-card">Entrenamiento a distancia</p>
-        <img src="/img/mujer-ejercitando-computadora.png" alt="">
-        <p id="texto">Ya no es escusa el no poder trasladarse fuera de su casa, el plan de entrenamiento a distancia
-          le
-          brinda la opción de obtener sus clases personalizadas esté donde esté a través de su computadora. El sistema
-          online de entrenamiento le dará la posibilidad de poder entrenar con la coach como si estuviera con ella.
-          Contáctenos e infórmese.</p>
+      <div class="card-servicio">
+        <p class="titulo-card">Entrenamiento a distancia</p>
+        <div class="img-card-container">
+          <img src="/img/mujer-ejercitando-computadora.png" alt="Entrenamiento online">
+        </div>
+        <p class="texto-card">Ya no es excusa el no poder trasladarse fuera de su casa, el plan de entrenamiento a
+          distancia le brinda la opción de obtener sus clases personalizadas esté donde esté a través de su computadora.
+          El sistema online de entrenamiento le dará la posibilidad de poder entrenar con la coach como si estuviera con
+          ella. Contáctenos e infórmese.</p>
       </div>
 
-      <div class="div-info-4" id="card">
-        <p id="titulo-card">Entrenamiento asincrónico</p>
-        <img src="/img/mujerEjercitandoOnline.jpeg" alt="">
-        <p id="texto">Sí...aunque no lo crea también tenemos un plan de entrenamiento asincrónico, solo requiere de
-          internet y coordinar con nuestra coach de manera online para poder seguir su entrenamiento, el cual le dará
-          previamente en formato video para que usted lo pueda hacer cuando pueda. No hay más escusas, contáctenos
-          para
-          informarse.</p>
+      <div class="card-servicio">
+        <p class="titulo-card">Entrenamiento asincrónico</p>
+        <div class="img-card-container">
+          <img src="/img/mujerEjercitandoOnline.jpeg" alt="Entrenamiento asincrónico">
+        </div>
+        <p class="texto-card">Sí... aunque no lo crea también tenemos un plan de entrenamiento asincrónico, solo
+          requiere de internet y coordinar con nuestra coach de manera online para poder seguir su entrenamiento, el
+          cual le dará previamente en formato video para que usted lo pueda hacer cuando pueda. No hay más excusas,
+          contáctenos para informarse.</p>
       </div>
-    </div>
-  </tbody>
-  <div class="espaciador"></div>
+    </section>
 
+  </main>
 
-
+  <!-- Footer -->
   <footer>
-
     <section class="footer-text">
       <div id="p">
-        <p>© 2024 Entrenamiento Fitness. Todos los derechos reservados.</p>
+        <p class="mb-0">© 2024 Entrenamiento Fitness. Todos los derechos reservados.</p>
       </div>
 
-      <div class="p-footer" id="id-footer">
-        <div id="div">
+      <div class="p-footer">
+        <!-- Columna 1: Opciones -->
+        <div class="col-footer">
           <p id="p1">Opciones disponibles:</p>
-          <p id="texto-footer">
+          <p class="texto-footer">
             <strong>•</strong> Plan adaptado a tu tiempo y objetivos.<br>
             <strong>•</strong> Correcciones de técnicas.<br>
             <strong>•</strong> Motivación y guía diaria.<br>
@@ -153,106 +154,100 @@
           </p>
         </div>
 
-        <div id="div">
+        <!-- Columna 2: Recomendaciones -->
+        <div class="col-footer">
           <p id="p2">Recomendaciones:</p>
-          <p id="texto-footer">Comunicación directa con la coach</p>
-          <p id="texto-footer">Seleccione la modalidad de su preferencia</p>
-          <p id="texto-footer">Permita a su coach ser parte de su progreso</p>
-          <p id="texto-footer">Utilice los veneficios que ofrece la app</p>
+          <p class="texto-footer-simple">Comunicación directa con la coach</p>
+          <p class="texto-footer-simple">Seleccione la modalidad de su preferencia</p>
+          <p class="texto-footer-simple">Permita a su coach ser parte de su progreso</p>
+          <p class="texto-footer-simple">Utilice los beneficios que ofrece la app</p>
         </div>
-        
-        <div id="div">
+
+        <!-- Columna 3: Preguntas Frecuentes -->
+        <div class="col-footer">
           <p id="p3">Preguntas frecuentes:</p>
-          <section class="section-modal" id="section-modal"">
-            <button id="contenido-modal"
-            onclick="abrirModal('¿Puedo ejercitar desde mi casa?', 'Claro que sí, podés hacer ejercicio desde su casa gracias a internet. Vas a poder tener clases con la coach mediante comunicación online, pudiendo entrenar de manera constante en los días y horarios previamente acordados según sus necesidades.')">
-            ¿Puedo
-            ejercitar desde mi casa?'</button>
-            <button id="contenido-modal"
-              onclick="abrirModal('¿Es posible ejercitarme si tengo horarios rotativos por mi trabajo?', 'Sí, es posible ejercitarse según sus horarios gracias a los diversos métodos que manejamos, entre ellos existe los videos online o seguimiento constante de parte de la coach, esto le permitira observar las clases en el momento que usted lo requiera para hacer los ejercicios cuando tenga tiempo y ejercitar sin preocupaciones.')">¿Es
-              posible ejercitarme si tengo horarios rotativos?</button>
-            <button id="contenido-modal"
-              onclick="abrirModal('¿Si quiero asistir a un gimnasio lo puedo hacer?', 'Usted podrá entrenar con nuestra coach en el gimnasio de manera personal o grupal según su conveniencia, pudiendo acceder a un ambiente sano y positivo para que su entrenamiento sea placentero y a gusto.')">¿Se
-              puede entrenar en algún gimnasio?</button>
-
-            <button id="contenido-modal"
-              onclick="abrirModal('¿Tengo un seguimiento de mis rutinas o técnicas?', 'Claro!, tenés un seguimiento constante y confiable, para que su experiencia sea agradable, la coach atenderá sus necesidades para lograr su objetivo y alcance sus metas.')">¿Tengo
-              un seguimiento?</button>
-          </section>
-
-          <!-- Modal único -->
-          <div id="miModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="cerrarModal()">&times;</span>
-              <h3 id="modalPregunta"></h3>
-              <p id="modalRespuesta"></p>
-            </div>
+          <div class="section-modal">
+            <button class="contenido-modal-btn"
+              onclick="abrirModal('¿Puedo ejercitar desde mi casa?', 'Claro que sí, podés hacer ejercicio desde tu casa gracias a internet. Vas a poder tener clases con la coach mediante comunicación online, pudiendo entrenar de manera constante en los días y horarios previamente acordados según tus necesidades.')">¿Puedo
+              ejercitar desde mi casa?</button>
+            <button class="contenido-modal-btn"
+              onclick="abrirModal('¿Es posible ejercitarme si tengo horarios rotativos por mi trabajo?', 'Sí, es posible ejercitarse según tus horarios gracias a los diversos métodos que manejamos, entre ellos existen los videos online o seguimiento constante de parte de la coach, esto te permite observar las clases en el momento que lo requieras para hacer los ejercicios cuando tengas tiempo y ejercitarte sin preocuparte.')">¿Es
+              posible ejercitarme con horarios rotativos?</button>
+            <button class="contenido-modal-btn"
+              onclick="abrirModal('¿Se puede entrenar en gimnasio?', 'Podés entrenar con la coach en el gimnasio de manera personal o grupal según tu conveniencia, accediendo a un ambiente sano y positivo para que tu entrenamiento sea placentero y acorde a tus necesidades.')">¿Se
+              puede entrenar en gimnasio?</button>
+            <button class="contenido-modal-btn"
+              onclick="abrirModal('¿Tengo un seguimiento de mis rutinas o técnicas?', 'Claro!, tenés un seguimiento constante y confiable, para que su experiencia sea agradable, la coach atenderá tus necesidades para lograr los objetivos y alcances tus metas.')">¿Tengo un seguimiento de mis rutinas o técnicas?</button>
           </div>
-
         </div>
 
-        <div id="div">
+        <!-- Columna 4: Privacidad (SEPARACIÓN CON LÍNEA ENLACE) -->
+        <div class="col-footer">
           <p id="p4">Privacidad:</p>
-          <h6>
-            <p id="texto-footer">Acerca de su privacidad:</p>
+          <div class="privacidad-contenedor">
+            <p class="texto-footer-simple font-weight-bold">Acerca de su privacidad:</p>
             <p class="privacidad">La información proporcionada se utilizará para gestionar el servicio solicitado y se
               almacenará de acuerdo con la normativa vigente. Los usuarios tienen el derecho de acceder, rectificar y
-              suprimir sus datos personales.<br>
-              Sus datos serán tratados con confidencialidad y seguridad por el personal pertinente.</p>
-          </h6>
+              suprimir sus datos personales.<br><br>Sus datos serán tratados con confidencialidad y seguridad por el
+              personal pertinente.</p>
+          </div>
         </div>
-      </div>
 
-      <div id="contenedor-contacto">
-        <h4 id="titleContactos">Contactos:</h4>
-
-        <a href="https://wa.me/+5491137042115?text=Hola, me gustaría saber más sobre sus programas de entrenamiento !!!"
-          target="_blank" rel="noopener">
-          <img id="imagen-whatsapp" id="icon" src="/icon-footer/icon-contacto/Icon-WhatsApp.png" alt="Icono WhatsApp"
-            title="Contactar por WhatsApp" /></a>
-      </div>
-      <!-- 
-            <a href="https://t.me/s/Rutinas_Gym_Pro?before=227" target="_blank"><img style="width: 40px; height: auto;"id="icon"  src="/icon-footer/icon-contacto/Icon-Telegram.png" alt="Icono Telegram" title="Envía mensaje al Telegram"/></a>
-
-            <a href="https://www.snapchat.com/p/e00baf2b-1f70-4b2d-a4ce-8f13c1767b7e/530327384766464" target="_blank">
-            <img style="width: 40px; height: auto;" id="icon" src="/icon-footer/icon-contacto/Icon-Snapchat.png" alt="Icono Snapchat" title="Contactar por Snapchat"/>
+        <!-- Redes y Enlaces (ESTRUCTURA DEBAJO AL ANCHO COMPLETO) -->
+        <div class="social-grid">
+          <div class="contenedor-contacto-item">
+            <h4 class="titleContactos">Contacto:</h4>
+            <a id="secure-whatsapp" class="whatsapp-btn-moderno" target="_blank" rel="noopener noreferrer"
+              aria-label="Contactar por WhatsApp">
+              <img class="imagen-enlace-icono" src="/icon-footer/icon-contacto/Icon-WhatsApp.png" alt="Icono WhatsApp"
+                title="Contactar por WhatsApp" />
             </a>
           </div>
-          -->
 
-      <div id="contenedor-enlace">
-        <h4 id="titleContactos">Enlace online:</h4>
-        <a href="https://www.instagram.com/pf.lulimorua_/profilecard/?igsh=ZDNudnRvd2M0NnI3 " target="_blank"
-          rel="noopener"><img id="imagen-enlace" id="icon" src="/icon-footer/icon-enlace/Icon-Instagram.png"
-            alt="Icono Instagram" title="Ingresa al Instagram" /></a>
+          <div id="contenedor-enlace">
+            <h4 class="titleContactos">Enlace online:</h4>
+            <div class="enlaces-iconos-wrapper">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                aria-label="Ver reel en Instagram">
+                <img src="/icon-footer/icon-enlace/Icon-Instagram.png" class="imagen-enlace-icono" alt="Icono Instagram"
+                  title="Ingresa al Instagram" />
+              </a>
+              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer"
+                aria-label="Visitar nuestro perfil de TikTok">
+                <img src="/icon-footer/icon-enlace/Icon-TikTok.png" class="imagen-enlace-icono" alt="Icono TikTok"
+                  title="Ingresa a TikTok" />
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
+                aria-label="Visitar nuestro canal de YouTube">
+                <img src="/icon-footer/icon-enlace/Icon-YouTube.png" class="imagen-enlace-icono" alt="Icono YouTube"
+                  title="Ingresa a YouTube" />
+              </a>
+            </div>
+          </div>
+        </div>
 
-        <a href="https://www.tiktok.com/@luwasiak04?_t=ZM-8xN29bjzXzq&_r=1" target="_blank" rel="noopener">
-          <img id="imagen-enlace" id="icon" src="/icon-footer/icon-enlace/Icon-TikTok.png" alt="Icono TikTok"
-            title="Ingresar al TikTok" /></a>
-
-        <a href="https://www.youtube.com/shorts/arotFde5qsk?feature=share" target="_blank" rel="noopener">
-          <img id="imagen-enlace" id="icon" src="/icon-footer/icon-enlace/Icon-YouTube.png" alt="Icono YouTube"
-            title="Dirigete a YouTube" /></a>
-
-        <!--
-            <a href="https://www.facebook.com/Gimnasio49/" target="_blank">
-            <img style="width: 40px; height: auto;" id="icon" src="/icon-footer/icon-enlace/Icon-Facebook.png" alt="Icono Facebook" title="Ir al Facebook"/></a>
-            -->
-      </div>
-
-
+      </div><!-- Cierre de .p-footer -->
       <div id="final"></div>
-      <br>
-      <br>
     </section>
-
-
   </footer>
+
+  <!-- Modal único -->
+  <!-- Estructura del Modal al final del index.html -->
+  <div id="miModal" class="modal-moderno">
+    <div class="modal-content-moderno">
+      <span class="close-moderno" onclick="cerrarModal()">&times;</span>
+      <h3 id="modalPregunta"></h3>
+      <p id="modalRespuesta"></p>
+    </div>
+  </div>
+
+
   <script src="/js/modal.js"></script>
+  <script src="/js/index.js"></script>
   <script src="/js/resaltador-enlaces.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+  <!-- Bootstrap 5.3.3 Estable 
+  <script src="https://jsdelivr.net" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  -->
 
 </body>
 

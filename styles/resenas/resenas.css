@@ -1,213 +1,311 @@
-:root{
-  --color-rosa: rgb(190, 35, 35, .4);
-  --color-negro: rgb(0, 0, 0);
-  --color-blanco: rgb(255, 255, 255);
-  --color-crema-blanco: rgb(245, 222, 179);
-}
-body, html{
+/* ==========================================================================
+   ESTRUCTURA GENERAL Y FONDO DE PANTALLA FIJO (IGUAL AL INICIO)
+   ========================================================================== */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  width: 100%;
-  height: 100%;
-  background-image: url(/img/luPatadaBurro.jpeg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+
+body {
+  /* Se agrega la imagen de fondo original con el filtro de opacidad controlado */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)), url('/img/PiernaBanco.jpg');
   background-size: cover;
-}
-/* INICIO TÍTULO PRINCIPAL */
-#titulo-resena{
-  font-size: 2.2rem;
-  color: var(--color-blanco);
-  text-align: center;
-  text-shadow: 2px 3px 2px var(--color-negro);
-}
-/* FIN TÍTULO PRINCIPAL */
-
-/* INICIO DE SECCIÓN IMAGEN DE FONDO Y TEXTO EN MEDIO DE RESEÑAS */
-.img-fondo{
-  width: 100%;
-  height: 100%;
-  background-image: url(/img/luEspalda2.jpeg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
-  background-size: cover;
-}
-#titulo{
-  color: var(--color-blanco);
-  font-size: 3.5em;
-  text-align: center;
-  margin-top: 30%;
-  text-shadow: 1px 1px 2px var(--color-negro);
-}
-#texto{
-  color: var(--color-blanco);
-  font-size: 2em;
-  text-align: justify;
-  text-align: center;
-  text-shadow: 1px 1px 2px var(--color-negro);
-  margin: 13% 0 25% 0;
-}
-.resenas-cambio{
+  background-attachment: fixed;
   width: 100%;
-  height: 100%;
-  padding: 0%;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  padding: 40px 0;
 }
-#img-resenas-cambio{
-  width: 48vw;
-  height: 100%;
+
+.container-text-resenas {
+  max-width: 1200px;
   margin: auto;
-  margin-bottom: 10%;
 }
-/* FIN DE SECCIÓN IMAGEN DE FONDO Y TEXTO EN MEDIO DE RESEÑAS */
 
-/* INICIO DE SECCIÓN DE RESEÑAS */
-.container-text-resenas{
-  width: 100%;
-  height: 100%;
+/* ==========================================================================
+   ESTILO DEL NUEVO BOTÓN VOLVER AL INICIO
+   ========================================================================== */
+.btn-volver-inicio {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(10, 10, 10, 0.6);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  gap: 8px;
 }
-.row-resenas{
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  flex-direction: column;
-  background-color: var(--color-rosa);
-}
-#r1{
-  border: solid 1.5px var(--color-negro);
-  margin: 5% 6% 0 0;
-  width: auto;
-  height: 15em;
-}
-#r2{
-  border: solid 1.5px var(--color-negro);
-  margin: 5% 30% 0% 0%;
-  width: auto;
-  height: 15em;
-}
-#r3{
-  border: solid 1.5px var(--color-negro);
-  margin: 8% 0% 10% 0%;
-  width: auto;
-  height: 15em;
-}
-.img-resenas{
-  max-width: 100%;
-  min-width: 50%;
-  max-height: 100%;
-  min-height: 50%;
-  /*object-fit: cover;*/
-  display: flex;
-  justify-content: auto;
-  align-items: auto;
-  /*background-color: var(--color-rosa);*/
-  /*border: solid 2px var(--color-negro);*/
-}
-#resenas{
-  width: 100%;
-  height: auto;
-}
-/* FIN DE SECCIÓN DE RESEÑAS */
 
-/* INICIO LOGO WHATSAPP */
-.icon-whatsApp{
-  width: 100%;
-  height: 100%;
+.btn-volver-inicio:hover {
+  color: #ffffff;
+  background: rgba(225, 59, 150, 0.2);
+  border-color: var(--color-rosa, #e13b96);
+  box-shadow: 0 0 15px rgba(225, 59, 150, 0.4);
+  transform: translateY(-2px);
+}
+
+.flecha-volver {
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+.btn-volver-inicio:hover .flecha-volver {
+  transform: translateX(-3px);
+  /* Pequeña animacion de la flecha al pasar el mouse */
+}
+
+/* Estilos de encabezado base */
+.section-mundo {
   text-align: center;
-  justify-content: center;
-  background-color: black;
-  margin:auto;
-  display: flex;
-}
-.whatsApp{
-  width: 100%;
-  height: 100%;
-  color: var(--color-blanco);
-  font-size: 1.5rem;
-  padding: 5%;
-}
-#imagen-whatsapp{
-  width: 15%;
-  height: auto;
-}
-a{
-  width: auto;
-  height: auto;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-}
-/* FIN LOGO WHATSAPP */
-
-/* INICIO LOGO GIRATORIO */
-.section-mundo{
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  height: 300px;
-  width: 300px;
-  margin: auto;  
+  margin-bottom: 15px;
 }
 
-/*> Efecto 3D Logo Circular <*/
 .mundo {
   font-size: 2rem;
-  color: var(--color-crema-blanco);
-  width: 230px;
-  height: auto;
-  border-radius: 50%; /* Forma circular */
-  background-image: url('/logo/LogoLu.jpeg');
-  background-size: cover;
-  background-repeat: repeat-x; /* Repetir horizontalmente */
-  animation: rotarMundo 10s linear infinite;
-  box-shadow: inset -20px 0 40px rgba(0, 0, 0, 0.781), /* sombra interna para efecto 3D */
-              0 0 20px rgba(0, 0, 0, 0.834), /* sombra externa */
-              /* siguientes efectos para crear luz del lado
-              izquierdo */
-              -3px -2px 7px var(--color-blanco),
-              -.5px 0px 1px var(--color-negro);
+  font-weight: 800;
+  color: var(--color-rosa, #e13b96);
+  text-shadow: 0 2px 10px rgba(225, 59, 150, 0.3);
+  letter-spacing: 2px;
 }
 
-/* Animación de desplazamiento horizontal */
-@keyframes rotarMundo {
-  from {
-      background-position: 0 0;
-  }
-  to {
-      background-position: -4250% 0;
+.lm-coach {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+/* ==========================================================================
+   GRILLA PARA LAS 3 RESEÑAS PRINCIPALES DEL INICIO
+   ========================================================================== */
+.grid-resenas-principales {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .grid-resenas-principales {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-/* Fin de animación de desplazamiento horizontal */
 
-.lm-coach{
+.card-row-resena {
+  cursor: zoom-in;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-row-resena:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(225, 59, 150, 0.25);
+}
+
+.img-fluid-resena {
   width: 100%;
-  height: auto;
-  font-size: 3rem;
-  color: var(--color-blanco);
-  text-shadow: 1.5px 1.5px 2px var(--color-negro);
-  box-shadow: 2px 2px 2px var(--color-negro), 2px -2px 2px var(--color-rosa);
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
-/* FIN LOGO GIRATORIO */
 
-/* INICIO PNG WhatsApp */
-#whatsApp-code{
-  width: 20%;
-  height: auto;
+/* Contenedor inferior sobre el fondo */
+.img-fondo-seccion {
+  text-align: center;
+  padding: 20px 0;
 }
-/* FIN PNG WhatsApp */
+
+#titulo {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+#texto-llamado {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* ==========================================================================
+   GALERÍA DE CAMBIOS INFERIORES (IMÁGENES CHICAS)
+   ========================================================================== */
+.resenas-cambio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 20px 15px;
+  max-width: 800px;
+  margin: auto;
+}
+
+@media (min-width: 576px) {
+  .resenas-cambio {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.item-cambio-wrapper {
+  cursor: zoom-in;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.img-resenas-cambio-item {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.item-cambio-wrapper:hover .img-resenas-cambio-item {
+  transform: scale(1.06);
+}
+
+/* ==========================================================================
+   SECCIÓN DE CONTACTO Y WHATSAPP / QR
+   ========================================================================== */
+.icon-whatsApp {
+  margin: 40px auto 0 auto;
+  max-width: 400px;
+  padding: 20px;
+  background: rgba(10, 10, 10, 0.65);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.whatsApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.texto-whatsapp-label {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.contacto-flex-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+}
+
+.imagen-whatsapp-icono {
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  display: block;
+}
+
+.imagen-whatsapp-icono:hover {
+  transform: scale(1.1);
+}
+
+.qr-code-reducido {
+  width: 90px !important;
+  height: 90px !important;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #ffffff;
+  padding: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  display: block;
+}
+
+/* ==========================================================================
+   ESTILOS DEL VISOR FLOTANTE (LIGHTBOX)
+   ========================================================================== */
+.visor-lightbox {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.93);
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.contenido-visor {
+  margin: auto;
+  display: block;
+  width: 92%;
+  max-width: 500px;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+  animation: zoomEfecto 0.25s ease-out;
+}
+
+.cerrar-visor {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.cerrar-visor:hover {
+  color: var(--color-rosa, #e13b96);
+}
+
+@keyframes zoomEfecto {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../logo/LogoLu.jpeg" type="image/x-icon">
+  <link class="favicon" rel="icon" href="../logo/LogoLu.jpeg" type="image/x-icon">
   <link rel="stylesheet" href="../styles/programas-fitness/programas.css">
   <link rel="stylesheet" href="../styles/imgPlanes.css">
   <title>Programas Fitness</title>
 </head>
 
 <body>
-  <div class="container-inicial">
+  <!-- Encabezado Moderno -->
+  <header class="container-inicial">
     <div class="title">
       <h1 id="title">PROGRAMAS DE ENTRENAMIENTO FITNESS</h1>
     </div>
@@ -19,189 +20,218 @@
       <a id="container-volver" href="/index.html">Inicio</a>
     </div>
     <div class="logo">
-      <img id="logo" src="../logo/LogoLu.jpeg" alt="Logo" id="logo">
+      <img id="logo" src="../logo/LogoLu.jpeg" alt="Logo">
     </div>
-  </div>
+  </header>
 
-  <br>
-  <Tbody class="container Tbody">
-
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card" id="">
-          <img src="../img/mujerEntrenandoSentadilla.jpeg" alt="Fitness 1" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title"><img id="imgPlanes" src="/img/iconoTablaHoja.png"
-              alt="">
-              PLAN PERSONALIZADO PRESENCIAL BÁSICO</h5>
-            <p class="card-text">Horarios disponibles:<br>
-              - Turno mañana<br>
-              - Turno mediodía<br>
-              - Turno noche
-            </p>
-            <details id="leerMas">
-              <summary id="text-desplagable">¿De qué se trata?</summary><br>
-              <p>Entrenamiento presencial con dinámica grupal y guiada.<br>
-                Vos elegís el horario que mejor se adapte a tu rutina diaria.
-              </p>
-            </details>
-          </div>
-
-          <div class="container-text-center">
-            <p class="text-center">
-              Durante la clase:<br>
-              - Guío la rutina paso a paso.<br>
-              - Corrijo ejercicios.<br>
-              - Indico cargas, repeticiones y descansos.<br>
-              - Acompañamiento constante durante el entrenamiento.<br>
-            </p>
-
-            <p class="text-center">
-              ¿Qué tenés que llevar?<br>
-              - Ropa cómoda.<br>
-              - Botella de agua.<br>
-              - Toalla.<br>
-              - Muchas ganas de entrenar y pasarla bien.<br>
-              - Disposición para superarte día a día.
-            </p>
-          </div>
-        </div>
-  
-
-
-
-    
-        <div class="card">
-          <img src="../img/luCorrigeSentadilla.jpeg" alt="Foto coach ejercitando pierna" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title"><img id="imgPlanes" src="/img/iconoPremium.png"
-                alt="">
-              PLAN PERSONALIZADO PRESENCIAL PREMIUM</h5>
-            <p class="card-text">Horarios disponibles:<br>
-              - Turno mañana<br>
-              - Turno mediodía<br>
-              - Turno noche
-            </p>
-            <details id="leerMas">
-              <summary id="text-desplagable">¿De qué se trata?</summary><br>
-              <p>Entrenamiento presencial con dinámica grupal y guiada.<br>
-                Vos elegís el horario que mejor se adapte a tu rutina diaria.
-              </p>
-            </details>
-          </div>
-
-          <div class="container-text-center">
-            <p class="text-center">
-              Durante la clase:<br>
-              - Guío la rutina paso a paso.<br>
-              - Corrijo ejercicios.<br>
-              - Indico cargas, repeticiones y descansos.<br>
-              - Acompañamiento constante durante el entrenamiento.<br>
-              - Asesoramiento presencial grupal.<br>
-              - Acompañamiento con mayor personalización.<br>
-              - Tips nutricionales o plan de alimentación general.<br>
-              - En caso de patologías, derivación a profesional en nutrición.<br>
-              - Actividades complementarias, (ej: caminatas grupales en el velódromo).<br>
-              - Guía constante y seguimiento de objetivos.<br><br>
-              <img id="imgMano" src="/img/iconoManoSeñalando.png"
-                alt="">Ideal si buscás
-              un
-              abordaje más completo:<br>
-              entrenamiento + hábitos + alimentación.
-            </p>
-
-            <p class="text-center">
-              ¿Qué tenés que llevar?<br>
-              - Ropa cómoda.<br>
-              - Botella de agua.<br>
-              - Toalla.<br>
-              - Muchas ganas de entrenar y pasarla bien.<br>
-              - Disposición para superarte día a día.
-            </p>
-          </div>
-        </div>
+  <!-- Contenedor Principal de Tarjetas -->
+  <main class="container-cards">
+    <div class="grid-programas">
       
-        <div class="card">
+      <!-- Tarjeta 1 -->
+      <article class="card">
+        <div class="card-img-container">
+          <img src="../img/mujerEntrenandoSentadilla.jpeg" alt="Fitness 1" class="card-img-top">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <img class="imgPlanes" src="/img/iconoTablaHoja.png" alt="">
+            PLAN PERSONALIZADO PRESENCIAL BÁSICO
+          </h5>
+          <p class="card-text"><strong>Horarios disponibles:</strong><br>
+            - Turno mañana<br>
+            - Turno mediodía<br>
+            - Turno noche
+          </p>
+          <details class="leerMas">
+            <summary class="text-despliegable">¿De qué se trata?</summary>
+            <p>Entrenamiento presencial con dinámica grupal y guiada.<br>
+              Vos elegís el horario que mejor se adapte a tu rutina diaria.
+            </p>
+          </details>
+        </div>
+
+        <div class="container-text-center">
+          <div class="text-block">
+            <h6>Durante la clase:</h6>
+            <ul>
+              <li>Guío la rutina paso a paso.</li>
+              <li>Corrijo ejercicios.</li>
+              <li>Indico cargas, repeticiones y descansos.</li>
+              <li>Acompañamiento constante durante el entrenamiento.</li>
+            </ul>
+          </div>
+
+          <div class="text-block">
+            <h6>¿Qué tenés que llevar?</h6>
+            <ul>
+              <li>Ropa cómoda.</li>
+              <li>Botella de agua.</li>
+              <li>Toalla.</li>
+              <li>Muchas ganas de entrenar y pasarla bien.</li>
+              <li>Disposición para superarte día a día.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta 2 -->
+      <article class="card">
+        <div class="card-img-container">
+          <img src="../img/luCorrigeSentadilla.jpeg" alt="Foto coach ejercitando pierna" class="card-img-top">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <img class="imgPlanes" src="/img/iconoPremium.png" alt="">
+            PLAN PERSONALIZADO PRESENCIAL PREMIUM
+          </h5>
+          <p class="card-text"><strong>Horarios disponibles:</strong><br>
+            - Turno mañana<br>
+            - Turno mediodía<br>
+            - Turno noche
+          </p>
+          <details class="leerMas">
+            <summary class="text-despliegable">¿De qué se trata?</summary>
+            <p>Entrenamiento presencial con dinámica grupal y guiada.<br>
+              Vos elegís el horario que mejor se adapte a tu rutina diaria.
+            </p>
+          </details>
+        </div>
+
+        <div class="container-text-center">
+          <div class="text-block">
+            <h6>Durante la clase:</h6>
+            <ul>
+              <li>Guío la rutina paso a paso.</li>
+              <li>Corrijo ejercicios.</li>
+              <li>Indico cargas, repeticiones y descansos.</li>
+              <li>Acompañamiento constante durante el entrenamiento.</li>
+              <li>Asesoramiento presencial grupal.</li>
+              <li>Acompañamiento con mayor personalización.</li>
+              <li>Tips nutricionales o plan de alimentación general.</li>
+              <li>En caso de patologías, derivación a profesional en nutrición.</li>
+              <li>Actividades complementarias (ej: caminatas en el velódromo).</li>
+              <li>Guía constante y seguimiento de objetivos.</li>
+            </ul>
+            <p class="highlight-text">
+              <img class="imgMano" src="/img/iconoManoSeñalando.png" alt="">
+              Ideal si buscás un abordaje más completo: entrenamiento + hábitos + alimentación.
+            </p>
+          </div>
+
+          <div class="text-block">
+            <h6>¿Qué tenés que llevar?</h6>
+            <ul>
+              <li>Ropa cómoda.</li>
+              <li>Botella de agua.</li>
+              <li>Toalla.</li>
+              <li>Muchas ganas de entrenar y pasarla bien.</li>
+              <li>Disposición para superarte día a día.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta 3 -->
+      <article class="card">
+        <div class="card-img-container">
           <img src="../img/luEnEspejo.jpeg" alt="Fitness 1" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title"><img id="imgPlanes" src="/img/iconoConexionVirtualBasico.png"
-                alt="">
-              PLAN PERSONALIZADO VIRTUAL</h5>
-            <p class="card-text">Horarios disponibles:<br>
-              - A convenir con tu entrenadora
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <img class="imgPlanes" src="/img/iconoConexionVirtualBasico.png" alt="">
+            PLAN PERSONALIZADO VIRTUAL
+          </h5>
+          <p class="card-text"><strong>Horarios disponibles:</strong><br>
+            - A convenir con tu entrenadora
+          </p>
+          <details class="leerMas">
+            <summary class="text-despliegable">¿De qué se trata?</summary>
+            <p>Entrenamiento desde donde quieras, con seguimiento real.<br>
+              Vos elegís el horario que mejor se adapte a tu rutina diaria.
             </p>
-            <details id="leerMas">
-              <summary id="text-desplagable">¿De qué se trata?</summary><br>
-              <p>Entrenamiento desde donde quieras, con seguimiento real.<br>
-                Vos elegís el horario que mejor se adapte a tu rutina diaria.
-              </p>
-            </details>
-          </div>
-
-          <div class="container-text-center">
-            <p class="text-center">         
-              - Rutina adaptada a tus objetivos.<br>
-              - Vos elegís los días de entrenamiento.<br><br>
-              ► Obtené la modalidad según tus necesidades:<br>
-              - En tu casa.<br>
-              - En gimnasio.<br>
-              - Combinado.<br><br>
-            </p>
-
-            <p class="text-center">
-              Incluye:<br>
-              - Video explicativo de cada ejercicio.<br>
-              - Correcciones técnicas.<br>
-              - Asesoramiento por chat, audio y mensajes.<br>
-              - Tips de hábitos y alimentación.<br>
-              - Motivación constante para mantener la continuidad.
-            </p>
-          </div>
+          </details>
         </div>
 
-        <div class="card">
+        <div class="container-text-center">
+          <div class="text-block">
+            <ul>
+              <li>Rutina adaptada a tus objetivos.</li>
+              <li>Vos elegís los días de entrenamiento.</li>
+            </ul>
+            <h6>Modalidades según tus necesidades:</h6>
+            <ul>
+              <li>En tu casa.</li>
+              <li>En gimnasio.</li>
+              <li>Combinado.</li>
+            </ul>
+          </div>
+
+          <div class="text-block">
+            <h6>Incluye:</h6>
+            <ul>
+              <li>Video explicativo de cada ejercicio.</li>
+              <li>Correcciones técnicas.</li>
+              <li>Asesoramiento por chat, audio y mensajes.</li>
+              <li>Tips de hábitos y alimentación.</li>
+              <li>Motivación constante para mantener la continuidad.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta 4 -->
+      <article class="card">
+        <div class="card-img-container">
           <img src="../img/luColage.png" alt="Fitness 1" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title"><img id="imgPlanes" src="/img/iconoConexionVirtualPremium.png"
-                alt="">
-              PLAN PERSONALIZADO VIRTUAL PREMIUM</h5>
-            <p class="card-text">Horarios disponibles:<br>
-              - A convenir con tu entrenadora
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <img class="imgPlanes" src="/img/iconoConexionVirtualPremium.png" alt="">
+            PLAN PERSONALIZADO VIRTUAL PREMIUM
+          </h5>
+          <p class="card-text"><strong>Horarios disponibles:</strong><br>
+            - A convenir con tu entrenadora
+          </p>
+          <details class="leerMas">
+            <summary class="text-despliegable">¿De qué se trata?</summary>
+            <p>Entrenamiento desde donde quieras, con seguimiento real.<br>
+              Vos elegís el horario que mejor se adapte a tu rutina diaria.
             </p>
-            <details id="leerMas">
-              <summary id="text-desplagable">¿De qué se trata?</summary><br>
-              <p>Entrenamiento desde donde quieras, con seguimiento real.<br>
-                Vos elegís el horario que mejor se adapte a tu rutina diaria.
-              </p>
-            </details>
+          </details>
+        </div>
+
+        <div class="container-text-center">
+          <div class="text-block">
+            <ul>
+              <li>Rutina adaptada a tus objetivos.</li>
+              <li>Vos elegís los días de entrenamiento.</li>
+            </ul>
+            <h6>Modalidades según tus necesidades:</h6>
+            <ul>
+              <li>En tu casa.</li>
+              <li>En gimnasio.</li>
+              <li>Combinado.</li>
+              <li>Rutina personalizada.</li>
+              <li>Seguimiento completo.</li>
+              <li>Videollamadas quincenales.</li>
+              <li>Correcciones técnicas en vivo.</li>
+              <li>Ajustes según progreso y objetivos.</li>
+            </ul>
           </div>
 
-          <div class="container-text-center">
-            <p class="text-center">         
-              - Rutina adaptada a tus objetivos.<br>
-              - Vos elegís los días de entrenamiento.<br><br>
-              ► Obtené la modalidad según tus necesidades:<br>
-              - En tu casa.<br>
-              - En gimnasio.<br>
-              - Combinado.<br>
-              - Rutina personalizada.<br>
-              - Entrenamiento desde tu casa.<br>
-              - Seguimiento completo.<br>
-              - Videollamadas quincenales.<br>
-              - Correcciones técnicas en vivo.<br>
-              - Ajustes según progreso y objetivos.<br><br>
-            </p>
-
-            <p class="text-center">
-              <img id="imgMano" src="/img/iconoManoSeñalando.png"
-                alt="">Ideal para quienes quieren entrenar en casa,<br> pero sintiéndose acompañadas como si fuera presencial.
+          <div class="text-block text-center-vertical">
+            <p class="highlight-text">
+              <img class="imgMano" src="/img/iconoManoSeñalando.png" alt="">
+              Ideal para quienes quieren entrenar en casa, pero sintiéndose acompañadas y contenidas por su entrenadora.
             </p>
           </div>
         </div>
-      </div>
-    </div>
-  </Tbody>
+      </article>
 
+    </div>
+  </main>
 </body>
 
 </html>
+
